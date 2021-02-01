@@ -1,0 +1,10 @@
+h1{
+    margin: 50%;
+    font-size: 75%;
+    display: block;
+}
+#content{
+    display: block;
+    margin: 50%;
+    font-size: 50%;
+}
