@@ -1,0 +1,7 @@
+:root{
+    --main-colour : #D71D2D;
+}
+
+.myCanvas{
+    border:1px solid var(--main-colour);
+}
