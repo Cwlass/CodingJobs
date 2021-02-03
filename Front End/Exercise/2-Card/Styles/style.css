@@ -1,8 +1,111 @@
-flex-container{
-    background-color: rgba(47, 79, 79, 0.329);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400italic,300,300italic%7CSource+Sans+Pro:200,200italic");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+p{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 25px;
+    
+}
+.button{
+    text-decoration: none;
+    color: white;
+    border: solid white;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 50px;
+    letter-spacing: 5px;
+}
+
+.button:hover{
+    color: #FFCCB0 ;
+    border-color: #FFCCB0;
+}
+.class{
+
+    width: 354px;
+}
+.container{   
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    align-items: center;
 }
+.section{   
+    display: flex;
+    align-content: space-between;
+    border-top: solid white;
+    border-width: thin;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.image{
+    height: 354px;
+    width: 354px;
+    border-radius: 15px;
+    margin-left: 60px;
+}
+.imageR{
+    height: 354px;
+    width: 354px;
+    border-radius: 15px;
+    margin-right: 60px;
+}
+
+
 body{
-    background-image: url(images/bg.jpg);
+    background-image: linear-gradient(45deg, rgba(191,117,135,0.639) 0%, rgba(214,255,255,0.631)100%), url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+h1{
+    color: white;
+    align-self: center;
+    letter-spacing: 10px;
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 42px;
+}
+#content{
+    margin-left: 72px;
+    margin-right: 72px;
+}
+#dividerSmall{
+    width: 10%;
+    align-self: center;
+    margin-bottom: 42px;
+    border-top: solid white;
+
+}
+#intro{
+    align-self: center;
+    margin-bottom: 42px;
+    font-size: 20px;
+}
+
+#icon{
+    align-self: center; 
+    width:144px ;
+    height:144px ;
+    margin-bottom: 42px;
+    margin-top: 70px;
+}
+#card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: rgba(44,42,54,0.8);
+    width: 912px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
