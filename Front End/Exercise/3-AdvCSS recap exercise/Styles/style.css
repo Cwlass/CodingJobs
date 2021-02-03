@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: lightgray;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+}
+
+main{
+    
+    width: 600px;
+    margin: auto;
+}
+
+article{
+    background-color: white;
+    margin: 5px;
+}
+
+h1{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin-top:20px ;
+}
+h2{
+    margin: 10px;
+}
+p{
+    margin: 10px;
+}
+
+.smallCont{
+    display: flex;
+    justify-content: space-between;
+}
+
+#headButton{
+    display: flex;
+    
+}
+
+#News{
+    background-color: blue;
+    color: white;
+    border: solid blue;
+}
+#Buzz{
+    background-color: red;
+    color: white;
+    border: solid red;
+}
+#Sports{
+    background-color: green;
+    color: white;
+    border:solid green;
+}
+
+#Economie{
+    background-color: greenyellow;
+    color: white;
+    border: greenyellow solid;
+}
+
+#img{
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+}
+
+
