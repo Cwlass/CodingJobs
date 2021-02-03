@@ -23,8 +23,26 @@ article{
     margin: 5px;
 }
 
-h1{
+#newsBanner{
     background-color: blue;
+    color: white;
+    text-align: center;
+    margin-top:20px ;
+}
+#buzzBanner{
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin-top:20px ;
+}
+#sportsBanner{
+    background-color: green;
+    color: white;
+    text-align: center;
+    margin-top:20px ;
+}
+#EconomyBanner{
+    background-color: greenyellow;
     color: white;
     text-align: center;
     margin-top:20px ;
