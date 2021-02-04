@@ -19,6 +19,10 @@ main:hover section{
     bottom:0%;
 }
 
+main:hover .overlay{
+    background: rgba(0, 0, 0, 0.6);
+}
+
 
 section{
     background-color: white;
@@ -50,14 +54,19 @@ section p{
 }
 
 .overlay{
-    background-color:rgba(0, 0, 0, 0.3);
+    display: block;
+    width: 370px;
+    height: 420px;
+    transition-duration: 0.5s;
 }
 
 .img{
+    display: block;
     background: url('../images/c0.jpg');
-    width: 100%;
-    height: 100%;
+    width: 370px;
+    height: 420px;
 }
+
 
 #date{
     position: absolute;
