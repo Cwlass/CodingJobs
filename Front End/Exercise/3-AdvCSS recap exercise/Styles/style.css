@@ -9,17 +9,25 @@ body{
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: grey;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-main{
-    
+main{ 
     width: 600px;
     margin: auto;
+    margin-top: 90px;
 }
 
 article{
     background-color: white;
+    margin: 5px;
+}
+header ul a{
+    display: inline-block;    
     margin: 5px;
 }
 
@@ -27,25 +35,29 @@ article{
     background-color: blue;
     color: white;
     text-align: center;
-    margin-top:20px ;
+    margin:20px 0px 20px 0px ;
+    text-transform: uppercase;
 }
 #buzzBanner{
     background-color: red;
     color: white;
     text-align: center;
-    margin-top:20px ;
+    margin:20px 0px 20px 0px ;
+    text-transform: uppercase;
 }
 #sportsBanner{
     background-color: green;
     color: white;
     text-align: center;
-    margin-top:20px ;
+    text-transform: uppercase;
+    margin:20px 0px 20px 0px ;
 }
 #EconomyBanner{
+    text-transform: uppercase;
     background-color: greenyellow;
     color: white;
     text-align: center;
-    margin-top:20px ;
+    margin:20px 0px 20px 0px ;
 }
 h2{
     margin: 20px;
@@ -59,36 +71,62 @@ p{
     justify-content: space-between;
 }
 
-#headButton{
+#HeadButton{
     display: flex;
-    
+    justify-content: space-between;
+
 }
 
 #News{
     background-color: blue;
     color: white;
     border: solid blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 50px 20px 50px;
+}
+#News:hover{
+    filter: invert(1);
 }
 #Buzz{
+    text-transform: uppercase;
     background-color: red;
     color: white;
     border: solid red;
+    text-decoration: none;
+    padding: 20px 50px 20px 50px;
+    
+}
+#Buzz:hover{
+    filter: invert(1);
 }
 #Sports{
-    background-color: green;
+    background-color:#27ae60;
     color: white;
-    border:solid green;
+    text-transform: uppercase;
+    text-decoration: none;
+    border:solid #27ae60;
+    padding: 20px 50px 20px 50px;
+}
+#Sports:hover{
+    filter: invert(1);
 }
 
 #Economie{
-    background-color: greenyellow;
+    background-color: #16a085;
     color: white;
-    border: greenyellow solid;
+    border: 16a085 solid;
+    padding: 20px 50px 20px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#Economie:hover{
+    filter: invert(1);
 }
 
 #img{
-    width: 32px;
-    height: 32px;
+    height: 64px;
+    width: 64px;
     margin: 5px;
 }
 

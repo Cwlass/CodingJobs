@@ -21,7 +21,7 @@ p{
     padding-right: 25px;
     border-radius: 50px;
     letter-spacing: 5px;
-}
+   transition-duration: 1s;}
 
 .button:hover{
     color: #FFCCB0 ;
@@ -37,6 +37,7 @@ p{
     justify-content: center;
     position: relative;
     align-items: center;
+    width: 100%;
 }
 .section{   
     display: flex;
@@ -45,16 +46,17 @@ p{
     border-width: thin;
     padding-top: 50px;
     margin-bottom: 50px;
+    width: 100%;
 }
 .image{
-    height: 354px;
-    width: 354px;
+    height: 30%;
+    width: 30%;
     border-radius: 15px;
     margin-left: 60px;
 }
 .imageR{
-    height: 354px;
-    width: 354px;
+    height: 30%;
+    width: 30%;
     border-radius: 15px;
     margin-right: 60px;
 }
@@ -105,7 +107,8 @@ h1{
     flex-direction: column;
     border-radius: 15px;
     background-color: rgba(44,42,54,0.8);
-    width: 912px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    width: 60%;
+    
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
