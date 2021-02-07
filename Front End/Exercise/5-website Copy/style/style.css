@@ -6,6 +6,7 @@ header{
     display: flex;
     justify-content: space-between;
     margin: 0px 100px;
+    margin-top: 58px;
 }
 header a{
     text-decoration: none;
@@ -23,9 +24,17 @@ h1 span{
     color: chocolate;
 }
 h2{
+    margin-top: 130px;
+    margin-bottom: 50px;
     font-size: 70.93px;
     width: 521px;
     height: 225px;
+}
+h3{
+    width: 172px;
+    height: 26px;
+    font-size: 22.5px;
+    margin-bottom: 25px;
 }
 
 main{
@@ -82,4 +91,11 @@ text-align: center;
 #basket img{
     width: 24px;
     height: 17px;
+}
+#description{
+    width: 492px;
+    height: 108px;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 40px;
 }
