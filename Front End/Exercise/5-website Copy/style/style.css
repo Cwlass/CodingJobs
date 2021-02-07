@@ -54,6 +54,10 @@ input[type=text]{
 .galleryImg{
     width: 74.85px;
     height: 74.85px;
+    
+}
+#imgSection{
+text-align: center;
 }
 
 #mainImg{
