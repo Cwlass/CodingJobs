@@ -21,6 +21,7 @@ nav{
     background-color: #0c7973;
 }
 
+
 nav input{
     background-color: #2a8878;
     border-radius:5px ;
@@ -30,7 +31,7 @@ nav input{
     color: darkgray;
 }
 nav img{
-    margin: 10px;
+    margin: 10px; 
 }
 h2{
     color: #feebda;
@@ -100,6 +101,7 @@ main article{
 
     nav input{
         margin: auto;
+        
     }
     main{
         display: flex;
@@ -147,12 +149,38 @@ main article{
         display: none;
     }
     .headerSection h1{
-        font-size: 60px;
+        font-size: 80px;
     }
     .headerSection p{
-        font-size: 20px;
+        font-size: 40px;
+        column-count: 2;
     }
     .headerSection a{
+        font-size: 40px;
+        
+    }
+    .headerSection{
+        margin: 120px
+    }
+    nav{
+        justify-content: flex-end;
+    }
+    main article{
+        width: 30%;
+        position: relative;
+    }
+    article img{
+        position: absolute;
+        display: block;
+        bottom: 90%;
+        left: 50%;
+        transform: translate(-10px );
+    }
+    article h3{
+        margin: 30px auto 15px;
+        
+    }
+    article p{
         font-size: 20px;
     }
 }
