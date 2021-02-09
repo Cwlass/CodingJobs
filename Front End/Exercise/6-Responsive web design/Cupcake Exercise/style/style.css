@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cookie', cursive;
+}
+body{
+    background-color: #2a8878;
+}
+article img{
+    display: none;
+}
+article p{
+    padding: 10px;
+}
+nav{
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0c7973;
+}
+
+nav input{
+    background-color: #2a8878;
+    border-radius:5px ;
+    margin: 5px;
+    border-style: none;
+    padding-left: 10px;
+    color: darkgray;
+}
+nav img{
+    margin: 10px;
+}
+h2{
+    color: #feebda;
+    text-align: center;
+    margin: auto;
+}
+
+hr{
+    width: 90%;
+    margin: auto;
+    border-style: none;
+    border-top-style: dotted;
+    color:#e782a4 ;
+}
+main{
+    margin: 5px;
+    color: #e782a4;
+}
+main h3{
+    font-size: 30px;
+}
+
+main article{
+    background-color: #feebda;
+    margin: 10px 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+#copyright{
+    color: #feebda;
+    text-align: center;
+}
+
+.headerSection{
+    margin: 10px auto;
+    text-align: center;
+    width: 90%;
+}
+.headerSection img{
+    width: 33%;
+    margin: 20px;
+}
+
+.headerSection h1{
+    color: #feebda;
+}
+.headerSection p{
+    color: #feebda;
+}
+.headerSection a{
+    color: #e782a4;
+}
+#tablet{
+    display: none;
+    background-color: #feebda;
+}
+#tablet img{
+    display: none;
+    
+}
+#tablet a{
+    text-decoration: none;
+    color: #991d42; 
+}
+@media screen and (min-width: 800px){
+
+    nav input{
+        margin: auto;
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main article{
+        width: 45%;
+        margin: 10px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    .navButt{
+        display: none;
+    }
+    .headerSection{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+    .headerSection h1{
+        font-size: 60px;
+    }
+    .headerSection p{
+        font-size: 20px;
+    }
+    .headerSection a{
+        font-size: 20px;
+    }
+
+    #tablet{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+}
+@media screen and (min-width: 1200px){
+    #tablet img{
+        display: block;
+        height: 90px;
+    }
+    .headerSection img {
+        display: none;
+    }
+    .headerSection h1{
+        font-size: 60px;
+    }
+    .headerSection p{
+        font-size: 20px;
+    }
+    .headerSection a{
+        font-size: 20px;
+    }
+}
