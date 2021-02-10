@@ -1,0 +1,106 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 39px;
+}
+
+h2 {
+  font-size: 60px;
+  margin-top: 0;
+}
+
+main section {
+  background-image: url(../images/1-shape.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  margin: 0px 206px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section article {
+  margin-top: 150px;
+  width: 50%;
+}
+
+main section article p {
+  color: #888888;
+  font-size: 20p;
+  margin: 70px auto;
+}
+
+main section article a {
+  text-decoration: none;
+  padding: 35px 100px;
+  border-radius: 25px;
+  background-color: #338cf2;
+  color: white;
+}
+
+nav {
+  margin: 0px 206px;
+  margin-bottom: 132px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav div {
+  width: 505px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav div a {
+  text-decoration: none;
+  color: black;
+}
+
+nav div a:hover {
+  color: #338cf2;
+}
+
+.Icons {
+  margin: 0px 206px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.Icons p {
+  width: 403px;
+  font-size: 20px;
+  color: #6B6B6B;
+}
+
+.Icons a {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
