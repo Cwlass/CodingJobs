@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <!-- Header at top of screen -->
+        <!-- <Nav> is given same MArgin as Container to keep everythign aligned verticaly -->
+        <nav>
+            <article>
+                <!-- IDs are given to elements that will be hidden on desktop -->
+                <img id="imgMobile" src="Images/logo.png" alt="">
+                <h1>Lorem ipsum dolor <span>sit amet</span></h1>
+                <p id="pMobile">Bonjour Julien</p>
+                <!-- ID gived to Div to show it only on Desktop -->
+                <div id="navImg">
+                    <img src="Images/logo.png" alt="">
+                    <p>Bonjour Julien</p>
+                </div>
+                <!-- Again IDs used for  desktop setup which has different elements in the div -->
+                <div>
+                    <h1 id="desktopH1">Lorem ipsum dolor <span>sit amet</span></h1>
+                    <div id="innerDiv">
+                        <a href="">Contactez-nous</a>
+                        <a href="">Parrainage</a>
+                        <a href="">Déconnexion</a>
+                    </div>
+                </div>
+            </article>
+        </nav>
+        <!-- Overall container to apply black margin on sides -->
+        <div class="container">
+            <!-- Small section dedicated only to header image -->
+            <section class="headerImg">
+                <img src="Images/header-page-catalogue.png" alt="">
+            </section>
+            <!-- Section containing the 4 articles for sale created to allow differnet layout using flex on Desktop -->
+            <section class="offers">
+                <article>
+                    <!--Div with class priceCont created to allow free placement of price tag and article name using absolute positions on the text and a reletive tag on the div itself -->
+                    <div class="priceCont">
+                        <img src="Images/gant-boxe-1.png" alt="">
+                        <p>- 45%</p>
+                        <h3>GANTS DE BOXE COMBAT KLIMAX V3</h3>
+                    </div>
+                    <div class="buy">
+                        <a href="">Voir la vente</a>
+                        <p><span>120$</span> 65$</p>
+                    </div>
+                </article>
+
+                <article>
+                    <!-- Each article uses the same div and class layout -->
+                    <div class="priceCont">
+                        <img src="Images/gant-boxe-2.png"" alt="">
+                        <p>- 45%</p>
+                        <h3>GANTS DE BOXE COMBAT KLIMAX V3</h3>
+                    </div>
+                    <div class=" buy">
+                        <a href="">Voir la vente</a>
+                        <p><span>120$</span> 65$</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div class=" priceCont">
+                        <img src=" Images/gant-boxe-1.png" alt="">
+                        <p>- 45%</p>
+                        <h3>GANTS DE BOXE COMBAT KLIMAX V3</h3>
+                    </div>
+                    <div class="buy">
+                        <a href="">Voir la vente</a>
+                        <p><span>120$</span> 65$</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="priceCont">
+                        <img src="Images/gant-boxe-2.png" alt="">
+                        <p>- 45%</p>
+                        <h3>GANTS DE BOXE COMBAT KLIMAX V3</h3>
+                    </div>
+                    <div class="buy">
+                        <a href="">Voir la vente</a>
+                        <p><span>120$</span> 65$</p>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+        <!-- admittedly confusing class name created to set up entire lower screen since it used the same grey border without everything in it technicaly being a footer  -->
+        <section class="footer">
+            <!-- Article here raised up using absolute/relative positioning again -->
+            <article>
+                <ul>
+                    <p>Qui sommes-nous</p>
+                    <li>Contact</li>
+                    <li>Assistance</li>
+                    <li> CGV</li>
+                </ul>
+            </article>
+            <!-- Services class allowes mobile/desktop layout using display flex with flex wrap settings changed according to screen size -->
+            <article class="services">
+                <div>
+                    <img src="Images/icon-livre.png" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum ratione libero iusto ea maiores
+                        debitis! Est.</p>
+                </div>
+                <div>
+                    <img src="Images/icon-camion.png" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum ratione libero iusto ea maiores
+                        debitis! Est.</p>
+                </div>
+                <div>
+                    <img src="Images/icon-cadenat.png" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum ratione libero iusto ea maiores
+                        debitis! Est.</p>
+                </div>
+                <div>
+                    <img src="Images/icon-pouce.png" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum ratione libero iusto ea maiores
+                        debitis! Est.</p>
+                </div>
+            </article>
+            <!-- HR thats width is the same as the overall container above -->
+            <hr>
+            <!-- Nothing note worthy, simple flexbox for alignement -->
+            <footer>
+                <img src="Images/icon-facebook.png" alt="">
+                <img src="Images/icon-twitter.png" alt="">
+                <img src="Images/icon-linkedin.png" alt="">
+            </footer>
+            <!-- The true ending where you must face the copyright stuff. Text align center -->
+            <p id="trueEnding">© 2013 sport privilege. Tous droits réservés.</p>
+        </section>
+    </main>
+</body>
+
+</html>
