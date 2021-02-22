@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form id="form" action="">
+      <label>Name</label><br />
+      <input id="name" type="text" />
+      <br />
+      <label>Email</label><br />
+      <input id="email" type="email" />
+      <br />
+      <label>Phone Number</label><br />
+      <input id="number" type="tel" />
+      <br />
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <script>
+        document.addEventListener('submit',function(event){
+            event.preventDefault();
+
+        })
+        document.addEventListener("keyup",function(event){
+            const userName = document.querySelector("#name");
+            const userPhone = document.querySelector("#number");
+            const userEmail = document.querySelector("#email");
+            let nameCheck = false;
+            let phoneCheck = false;
+            let emailCheck = false;
+
+            if(userName.value.length>=4){
+                nameCheck = true;
+                console.log("name check passed");
+            }
+            if(userPhone.value.length == 9){
+                phoneCheck = true;
+                console.log("phone check passed");
+            }
+            if(userEmail.value.includes("@") && userEmail.value.includes(".")){
+                emailCheck = true;
+                console.log("mail check passed");
+            }
+            
+            if(nameCheck && phoneCheck && emailCheck){
+                console.log("submited");
+                document.querySelector("#form").style.border = "solid green 1px";
+            }else{
+                document.querySelector("#form").style.border = "solid red 1px";
+            }
+        })
+    </script>
+  </body>
+</html>
