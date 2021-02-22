@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .cuby {
+        background-color: red;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        border-radius: 5px;
+        font-size: 7rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="cuby"></div>
+    <script>
+      const cuby = document.querySelector('.cuby');
+      /*
+        We aim to create a game where we can move cubby
+    */
+      let posTop = 0;
+      /*
+        When a key is pressed down on the document
+        get the key that was pressed using key, code, or keyCode property of event
+        if the key pressed is the down arrow
+        increase the CSS top property
+        HINT : cuby.style.top = posTop + "%"; //and posTop should start at 0
+    */
+      cuby.style.top = posTop + '%';
+      /*
+     ADVANCED :
+         //move cubby using the arrow keys
+         //moving down when you press .... down
+         //move right when you press.... right
+    */
+    document.addEventListener("keydown",function(event){
+        switch (event.key) {
+    case "ArrowDown":
+        let tempD = cuby.style.top;
+        tempD = tempD.substring(0, tempD.length-1);
+        tempD++;
+        cuby.style.top = tempD + '%';
+
+      break;
+    case "ArrowUp":
+        let tempU = cuby.style.top;
+        tempU = tempU.substring(0, tempU.length-1);
+        tempU--;
+        cuby.style.top = tempU + '%';
+      break;
+    case "ArrowLeft":
+      let tempL = cuby.style.left;
+      tempL = tempL.substring(0, tempL.length-1);
+      tempL--;
+      cuby.style.left = tempL + '%';
+      break;
+    case "ArrowRight":
+      let tempR = cuby.style.left;
+      tempR = tempR.substring(0, tempR.length-1);
+      tempR++;
+      cuby.style.left = tempR + '%';
+      break;
+    default:
+      return;
+      }
+    });
+    </script>
+  </body>
+</html>
