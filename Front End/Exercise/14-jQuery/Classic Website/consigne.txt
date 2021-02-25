@@ -1,0 +1,20 @@
+You got you first job (again) :
+Your web agency gave you the homepage of the website.
+Many problems are in the page and you will have to do the JQuery.
+
+
+1 - when the page is loaded , make the preloader disappears 
+
+2 - Form verification
+
+  a - all the field are required 
+    and the email field accepts only mail adress (type=mail)
+    
+  b - The message must be more than 40 characters: 
+  use #helpForm to warn the user 
+
+
+  c - IF ALL IS VALID REPLACE THE FORM WITH 
+    {{name}}, your message {{message}} has been sent. 
+    You will be contact soon on the mail address {{email}} 
+    about {{subject}} 
