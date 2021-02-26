@@ -1,0 +1,125 @@
+/*Importing Fonts from Google Gonts*/
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+
+/*CSS reset taken from https://meyerweb.com/eric/tools/css/reset/  quicker then manualy doing it*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*reset ends*/
+
+/* Since we are only using one font, I set it in the body*/
+body{
+    font-family: 'Shippori Mincho', serif;
+}
+
+/*Defining the layout of the header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    height: 60px;
+    margin: auto;
+}
+
+/*Making the Font awesome icons fit better in header*/
+header i{
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+/*Making the H1 Dresses text nice and big and centered*/
+h1{
+    text-align: center;
+    font-size: 3em ;
+    margin-bottom: 30px;
+}
+/*Section that contains the dress image and info, set to relative to allow positioning of info inside it*/
+section{
+    text-align: center;
+    position: relative;
+}
+/*Make the image fit nicely inside the page with a small margin on the sides */
+section img{
+    width: 90%;
+}
+/* Most important thing here is position : absolute to place the dress info onto the bottom of the image while still inside it. Other small visial details added too*/
+.dressInfo{
+    background-color: white;
+    text-align: left;
+    width: 70%;
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    padding: 10px;
+
+}
+/*Same as above but for the best seller tag small border radius added to make it appreciable for Prof. Marty*/
+.bestSeller{
+    position: absolute;
+    background-color: white;
+    top:5%;
+    padding: 10px;
+    border-radius: 50px;
+    left: 10%;
+}
+
+/*Responsive to desktop, website was designed mobile first as per industry standart*/
+@media screen and (min-width: 700px){
+    /*made header look nicer*/
+    header{
+        margin-bottom: 50px;
+        max-width: 1000px;
+    }
+    /*Display flex added so Dress and image would be side by side; row-reverse was necesary to have the desired layout as they are reversed from classic flex*/
+    main{
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        width: 700px;
+    }
+    /*Center verticaly H1 in flex box*/
+    h1{
+        align-self: center;
+        margin: 30px;
+    }
+}
