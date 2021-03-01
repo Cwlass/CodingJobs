@@ -1,0 +1,25 @@
+nav a{
+    margin : 0 15px;
+}
+
+.display-4{
+    margin : 50px 30px;
+}
+.buttonGroup  {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+form{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.spacingClass{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#allButton{
+    align-self: center;
+    padding: 18px;
+}
