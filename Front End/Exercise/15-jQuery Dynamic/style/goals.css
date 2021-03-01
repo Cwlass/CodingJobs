@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000122;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    min-height: 10vh;
+    z-index: -1;
+}
+header .logo{
+    width: 20%;
+    margin: 30px 50px;
+}
+header a{
+ align-self: center;
+ margin-right: 30px;
+ text-decoration: none;
+ color: red;
+ font-size: 2em;
+}
+
+main{
+    z-index: 2;
+    margin-top: 10vh;
+    background-color: #F1F2FA;
+    border-radius: 50px 50px 0 0;
+    padding-top: 30px;
+    min-height: 90vh;
+    overflow: scroll;
+    margin-bottom: 10vh;
+}
+main h1{
+    text-align: left;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0px 15px;
+}
+ul{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 15px;
+    list-style-type: none;
+    margin: 30px 0px;
+}
+
+li a{
+    background-color: white;
+    color: #808090;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 0px 5px;
+}
+article{
+    width: 90%;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 20px;
+    position: relative;
+    background-image: url(../images/goals/maserati.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #A5B0DA;
+    padding: 30px;
+}
+article h2{
+    position: absolute;
+    top: 10%;
+    color: white;
+}
+
+article div{
+    position: absolute;
+    display: flex;
+    top: 30%
+}
+article p{
+    margin-right: 50px;
+    font-size: 1.25em;
+    align-self: center;
+}
+.current{
+    color: blue;
+}
+.goal{
+    color: #000122;
+    font-size: 1em;
+}
+footer{
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    height: 10vh;
+    width: 100%;
+}
+footer a{
+    width: 20%;
+}
+.progressLine{
+    height:100%;
+    width:0%;
+    background-color: blue;
+    border-radius: 50px;
+    top: 0;
+}
+.progressBar{
+    position: absolute;
+    top: 60%;
+    background-color: black;
+    height: 10px;
+    width: 150px;
+    border-radius: 50px;
+}
