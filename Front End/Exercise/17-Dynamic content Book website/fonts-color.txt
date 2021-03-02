@@ -1,0 +1,11 @@
+Colors : 
+ - black : #000000
+ - white : #FFFFFF
+ - blue links : #647B96;
+ - red dot : #E23F3F;
+ - grey header : #F8F8F8;
+ - paragraph grey : #656565;
+ - dark grey : #656565;
+ - line : #E4E4E4
+Fonts: 
+  Archivo

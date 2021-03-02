@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin: 0 10%;
+}
+.topHead{
+    display: flex;
+    justify-content: space-between;
+    
+    height: 70px;
+    padding: 10px 30px;
+}
+
+.headIcons a{
+    margin: 0 10px;
+    height: 100%;
+
+}
+.headIcons img{
+    height: 100%;
+}
+#logo{
+    height: 37px;
+}
+header section{
+    margin-top: 137px;
+    display: flex;
+}
+section img {
+    height: 100%;
+    margin: auto 10px;
+}
+section button {
+    height: 100%;
+    margin: auto 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 23px;
+    padding: 11px 29px;
+}
+section p{
+    font-size: 29px;
+}
+section h2{
+    font-size: 37px;
+}
+.counts{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 55px auto;
+    background-color: #f8f8f8;
+    padding: 31px 106px;
+    border-radius: 30px;
+}
+.counts p{
+color:  #656565;
+border-right: black solid 1px;
+padding: 0 100px;
+}
+.counts p span{
+    color: black;
+    font-weight: bold;
+}
+#lastElement{
+    border: none;
+}
+hr{
+    width: 70%;
+    margin: auto;
+}
+main{
+    margin: 100px 10%;
+}
+.mainHead{
+    display: flex;
+    justify-content: space-between;
+}
+.purchaseInfo{
+    display: flex;
+}
+.purchaseInfo img{
+    height: 100%;
+}
+.purchaseInfo p{
+    align-self: center;
+    color: #656565;
+    font-size: 37px;
+    white-space: nowrap;
+    margin: 0 15px;
+}
+.purchaseInfo button{
+    height: 100%;
+    margin: auto 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 23px;
+    padding: 11px 29px;
+    white-space: nowrap;
+}
+#mainImage{
+    width: 100%;
+    margin: 36px 0;
+}
+.bookInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.leftInfo div{
+    display: flex;
+
+}
+.leftInfo{
+width: 701px;
+}
+.leftInfo p{
+    font-size: 29px;
+    color: #656565;
+    margin: 15px 0;
+}
+.leftInfo h2{
+    font-size: 34px;
+}
+.rightInfo{
+    width: 370px;
+}
+.rightInfo div{
+    display: flex;
+    width: 60%;
+}
+.rightInfo div img{
+    height: 174px;
+    margin: 15px ;
+    margin-left: 0;
+}
+.rightInfo h2{
+    white-space: nowrap;
+}
+#friends{
+    display: flex;
+    
+}
+#friends img{
+    height: 61px;
+    width: 61px;
+}
+#sizeSpace{
+    margin-right: 60px;
+}
+.selectionHead{
+    display: flex;
+    justify-content: space-between;
+    margin:100px 10%;
+}
+.selectionHead div{
+    display: flex;
+}
+.selectionHead a{
+    align-self: center;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #656565;
+    font-size: 37px;
+}
+.selectionHead p{
+    font-size: 37px;
+}
+article{
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.book{
+    position: relative;
+    margin-bottom: 30px;
+}
+.book img{
+    height: 410px;
+    width: 290px;
+}
+.book h2{
+    margin: 15px 0;
+}
+.book h3{
+    position: absolute;
+    top: -2%;
+    left: 60%;
+    background-color: black;
+    color: white;
+}
+.bestSeller{
+    display: none;
+}
+.comments{
+    margin: 60px 10%;
+}
+textarea{
+    width: 100%;
+    height: 210px;
+    margin: 60px 0;
+}
+.comments input[type = "submit"]{
+    float: right;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 11px 31px;
+}
+.commentContainer{
+    margin: 60px 0;
+}
+.comment{
+    display: flex;
+    margin: 30px 0;
+}
+.comment img{
+    height: 61px;
+    width: 61px;
+}
+.comment p{
+    align-self: center;
+}
