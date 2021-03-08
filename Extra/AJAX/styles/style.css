@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: pink;
+}
+main {
+  display: flex;
+  height: calc(100vh - 50px);
+}
+.rooms {
+  background-color: lightblue;
+  width: 20%;
+}
+.messages {
+  background-color: lightgoldenrodyellow;
+  width: 60%;
+}
+.users {
+  width: 20%;
+  background-color: lightgreen;
+}
+
+form {
+  width: 400px;
+  margin: 50px auto;
+  background-color: lightsalmon;
+  padding: 20px;
+  border-radius: 10px;
+}
+form input {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  background-color: white;
+}

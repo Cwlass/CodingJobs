@@ -21,7 +21,7 @@ function createCardDisplay() {
         cloneCard.on('click', clickCard);
     }
     //Remove the card used as mock from HTMl
-    cardMock.remove();
+    //cardMock.remove();
 }
 //Definition of the function that is called when card is clicked on
 function clickCard() {
