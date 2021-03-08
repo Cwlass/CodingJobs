@@ -14,11 +14,12 @@ const app = Vue.createApp({
             picture: "",
             fcMembers: [],
             selectedMember: "",
-
+            loading: false,
         };
     },
     methods: {
         async getChar() {
+            this.loading = true
             const charUrl = charURL;
             const res = await fetch(charURL);
             const result = await res.json();
@@ -51,6 +52,7 @@ const app = Vue.createApp({
             const res = await fetch('https://xivapi.com/freecompany/' + fcID + '?data=FCM');
             const result = await res.json();
             this.fcMembers = result.FreeCompanyMembers;
+            this.loading = false;
         },
         async fcMemberFetch(e) {
             const newTarget = e.target.innerText;

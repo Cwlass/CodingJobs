@@ -22,6 +22,7 @@
             <button @click="getURL()"> Find Char</button>
         </section>
 
+        <div v-if="loading" class="loader"></div>
         <div id="container">
             <article id="player">
                 <div>
