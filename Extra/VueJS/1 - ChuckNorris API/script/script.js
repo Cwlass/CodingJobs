@@ -11,7 +11,7 @@ const app = Vue.createApp({
             const res = await fetch("https://api.chucknorris.io/jokes/random");
             const jsonRes = await res.json();
             this.leJoke = jsonRes.value;
-            this.picture = jsonRes.icon_url;
+            this.picture = jsonRes.icon_url; 
         }
     }
 })
