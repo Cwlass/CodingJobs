@@ -13,13 +13,24 @@
     <main id="app">
 
         <section id="search">
-            <input name="characterF" type="text" v-model="firstNameSearch">
-            <input name="characterL" type="text" v-model="secondNameSearch">
-            <label for="character">character Name</label>
-            <select v-model="selectedCat" class="categories">
-                <option v-for="catLoop in categories" :class="{active:(catLoop == selectedCat)}">{{catLoop}}</option>
-            </select>
-            <button @click="getURL()"> Find Char</button>
+            <div>
+                <div>
+                    <input placeholder="First Name" name="characterF" type="text" v-model="firstNameSearch">
+                    <input placeholder="Second Name" name="characterL" type="text" v-model="secondNameSearch">
+                    <label for="character">Character Name</label>
+                </div>
+                <div>
+                    <select name="Server" v-model="selectedCat" class="categories">
+                        <option v-for="catLoop in categories" :class="{active:(catLoop == selectedCat)}" value=""
+                            selected>
+                            {{catLoop}}
+                        </option>
+                    </select>
+                    <label for="Server">Select a Server</label>
+                    <button @click="getURL()"> Find Char</button>
+                </div>
+            </div>
+            <img src="ff14Logo.png" alt="">
         </section>
 
         <div v-if="loading" class="loader"></div>
@@ -36,7 +47,7 @@
                         </li>
                     </ul>
                 </div>
-                <img :src="picture" alt="">
+                <img v-bind:style="{display: imgDisplay}" :src="picture" alt="">
             </article>
         </div>
 

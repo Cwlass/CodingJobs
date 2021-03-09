@@ -6,15 +6,16 @@ const app = Vue.createApp({
         return {
             categories: [],
             selectedCat: "",
-            charName: 'char Name',
-            lvl: 'NameDay',
-            FC: 'FreeCompany',
+            charName: '',
+            lvl: '',
+            FC: '',
             firstNameSearch: "",
             secondNameSearch: "",
             picture: "",
             fcMembers: [],
             selectedMember: "",
             loading: false,
+            imgDisplay: "none"
         };
     },
     methods: {
@@ -43,6 +44,7 @@ const app = Vue.createApp({
             this.lvl = charResult.Character.Nameday;
             this.FC = charResult.Character.FreeCompanyName;
             this.picture = charResult.Character.Portrait;
+            this.imgDisplay = "block";
             fcID = charResult.Character.FreeCompanyId;
             console.log(fcID);
             this.loadmembers();
