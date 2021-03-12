@@ -10,4 +10,7 @@ export class JokeApiService {
   async getRndJoke() {
     return await this.http.get<any>('https://api.chucknorris.io/jokes/random').toPromise();
   }
+  async getCategories() {
+    return await this.http.get<any>('https://api.chucknorris.io/jokes/categories').toPromise();
+  }
 }

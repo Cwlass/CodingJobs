@@ -1,9 +1,9 @@
 <section>
     <img [src]="thumbnail" alt="">
     <ul>
-        <li "ngFor=let catLoop of categories">
+        <li *ngFor="let catLoop of categories">
             {{catLoop}}
-            </li>
+        </li>
     </ul>
     <p>{{rndJoke}}</p>
     <button (click)="handleClick()">Get Joke!</button>

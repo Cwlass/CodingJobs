@@ -13,15 +13,19 @@ export class JokeGenComponent implements OnInit {
   constructor(private jokeS: JokeApiService) { }
 
   ngOnInit(): void {
+    this.updateCat();
   }
   async handleClick() {
     const res = await this.jokeS.getRndJoke();
-    console.log(res);
+    //console.log(res);
     const joke = res.value;
     this.rndJoke = joke;
     this.thumbnail = res.icon_url;
   }
-  async updateCat({
-    const res = await this.
-  })
+  async updateCat() {
+    const res = await this.jokeS.getCategories();
+    console.log(res);
+    this.categories = res;
+
+  }
 }

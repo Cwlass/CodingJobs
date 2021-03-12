@@ -16,3 +16,6 @@ section p{
 section img{
     margin: 30px;
 }
+ul{
+    columns: 2;
+}
