@@ -1,0 +1,8 @@
+<section>
+    <img [src]="picture" [class.male]="gender == 'male'" [ngClass]="gender" alt="">
+    <div>
+        <p>{{firstName}} {{lastName | uppercase}} </p>
+        <p>{{email}}</p>
+        <button (click)="handleClick()">Go</button>
+    </div>
+</section>

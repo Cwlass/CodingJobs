@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    width: 500px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+      width: 100%;
+  }
+  button{
+      background-color: orangered;
+      height: 3em;
+      font-size: 2em;
+      border-radius: 15px;
+  }

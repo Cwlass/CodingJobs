@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet" />
+  <!-- Bootstrap CDN CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="style/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1>Pet4U</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#species">Species</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <h2>Get a pet for your life</h2>
+    <article>
+      <h3 id="home"><i class="fas fa-paw"></i>Rehome a pet</h3>
+      <div class="headerImage">
+        <img src="Images/website/pet+at+home.jpg" alt="">
+        <p>
+          Established in 1999, Help-A-Pet is a nonprofit organization with a single purpose: to provide financial
+          assistance for the medical care of pets whose owners are unable to afford the expense. Our efforts focus on
+          serving low-income disabled, elderly and working families, nationwide.
+          We find homes for unwanted cats, dogs, small pets and horses across the UK and our tailor-made service means
+          we
+          help each pet find the right person for them.
+          Our tiny staff handles the administrative duties, application review, and communicates with owners and
+          veterinarians to save the lives of pets from low-income families. But, YOU are also a huge part of our
+          organization. The funding that is able to support these pets comes directly from generous and compassionate
+          people like YOU. We bring the pets to YOU, and YOU do the magic.
+
+        </p>
+      </div>
+
+      <h3 id="species"><i class="fas fa-paw"></i>Species</h3>
+      <div id="images">
+        <figure>
+          <img src="images/species-dog.jpg" alt="" />
+          <figcaption>Dog</figcaption>
+        </figure>
+        <figure>
+          <img src="images/species-cat.jpg" alt="" />
+          <figcaption>Cat</figcaption>
+        </figure>
+        <figure>
+          <img src="images/species-horse.jpg" alt="" />
+          <figcaption>Horse</figcaption>
+        </figure>
+        <figure>
+          <img src="images/species-rabbit.jpg" alt="" />
+          <figcaption>Rabbit</figcaption>
+        </figure>
+      </div>
+      <!--NEW ANIMAL SECTION-->
+      <h3 id="animals"><i class="fas fa-paw"></i>Animals</h3>
+      <!-- BOOTSTRAP CARD IS USED AS CLONE MOCK-->
+      <div class="animalList">
+        <div class="card">
+          <img class="card-img-top" src="" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Lennox</p>
+          </div>
+        </div>
+      </div>
+      <h3 id="contact"><i class="fas fa-paw"></i>Contact</h3>
+      <section class="flex">
+        <div>
+          <h4>Address</h4>
+          <p>
+            1 Chemin des Mineurs Oeutranges <br /><br />
+            57100 Thionville<br /><br />
+            03 82 50 31 45
+          </p>
+          <h4>Get contacted</h4>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            I want to adopt a pet
+          </button>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143846.36006059797!2d6.034900719229571!3d49.39434227231999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x76a85282d65a07f5!2sLa%20Soci%C3%A9t%C3%A9%20Protectrice%20des%20Animaux%20(SPA)%20-%20refuge%20de%20Thionville!5e0!3m2!1sfr!2slu!4v1580470670970!5m2!1sfr!2slu"
+          allowfullscreen="">
+        </iframe>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <h5>Copyright left for Ward.</h5>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle"><i class="fas fa-paw"></i>Adopt our pets</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Wow ! You want to adopt a pet ? Can you tell us more about yourself?
+        </div>
+        <form action="">
+          <textarea name="" id="Message" cols="30" rows="10"></textarea>
+          <br>
+          <input type="checkbox" name="checkbox" id="checkBox">
+          <label for="checkbox">I love Animals</label>
+        </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button id="adoptBtn" type="button" class="btn btn-primary" disabled="true">Apply for Adoption</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JQUERY CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- BOOSTRAP CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+  <script src="Scripts/datas.js"></script>
+  <script src="Scripts/script.js"></script>
+</body>
+
+</html>
