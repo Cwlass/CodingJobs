@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-img [src]="icon"></ion-img>
+    <ion-card-header>
+
+      <ion-card-title>
+        Chuck Norris Joke!
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <li *ngFor="let catLoop of categories" (click)="selectCat(catLoop)"> {{catLoop}}</li>
+      </ul>
+      <p>{{joke}}</p>
+      <ion-button (click)="handleClick()" color="primary">Get Joke</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

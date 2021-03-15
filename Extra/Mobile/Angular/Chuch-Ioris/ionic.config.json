@@ -1,0 +1,7 @@
+{
+  "name": "Chuch-Ioris",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
