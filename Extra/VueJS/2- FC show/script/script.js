@@ -15,15 +15,21 @@ const app = Vue.createApp({
             fcMembers: [],
             selectedMember: "",
             loading: false,
-            imgDisplay: "none"
+            imgDisplay: "none",
+            equipement: []
         };
     },
     methods: {
+        async loadPage() {
+            this.loading = true
+            charURL = 'https://xivapi.com/character/search?name=Feliva+Arto&Spriggan';
+            this.getChar();
+        },
         async getChar() {
             this.loading = true
-            const charUrl = charURL;
             const res = await fetch(charURL);
             const result = await res.json();
+            console.log(result);
             charID = result.Results[0].ID;
             console.log(charID);
             this.findCharById();
@@ -54,17 +60,25 @@ const app = Vue.createApp({
             const res = await fetch('https://xivapi.com/freecompany/' + fcID + '?data=FCM');
             const result = await res.json();
             this.fcMembers = result.FreeCompanyMembers;
-            this.loading = false;
+            this.getGear();
         },
         async fcMemberFetch(e) {
             const newTarget = e.target.innerText;
             newTarget.replace(" ", "+");
             charURL = 'https://xivapi.com/character/search?name=' + newTarget + '&' + this.selectedCat;
             this.getChar();
+        },
+        async getGear() {
+            const res = await fetch('https://xivapi.com/character/' + charID + '?extended=1');
+            const result = await res.json()
+            this.equipement = result.Character.GearSet.Gear;
+            console.log(this.equipement);
+            this.loading = false;
         }
     },
     mounted() {
         this.loadServers();
+        this.loadPage();
     }
 
 });

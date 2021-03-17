@@ -20,6 +20,7 @@ export class CharacterPageComponent implements OnInit {
   fc = "Free Company"
   portrait = ""
   fcMembers = [];
+  gear = [];
   constructor(private ff14S: ApiGetService) { }
 
   ngOnInit(): void {
@@ -34,6 +35,9 @@ export class CharacterPageComponent implements OnInit {
     this.fcMembers = fcDate.FreeCompanyMembers;
   }
   async getGear() {
+    const gear = await this.ff14S.getGear(this.charID);
+    this.gear = gear.Character.GearSet.Gear;
+    console.log(this.gear);
 
   }
 

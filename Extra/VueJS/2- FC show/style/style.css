@@ -22,9 +22,7 @@ main #search{
     display: flex;
     justify-content: center;
 }
-img{
-    width: 50%;
-}
+
 .loader {
     margin: auto;
     border: 16px solid #f3f3f3;
@@ -61,8 +59,20 @@ img{
     font-size: 1.2em;
     padding: 5px;
   }
+  #container{
+    margin-top: 25px;
+  }
   #container li:hover {
     cursor: pointer;
+  }
+  #portrait{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #portrait img{
+    width: 70%;
   }
 
   @keyframes spin {
