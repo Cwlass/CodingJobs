@@ -20,4 +20,10 @@ export class ApiGetService {
   async getCharFC(id) {
     return await this.http.get<any>('https://xivapi.com/character/' + id + "?data=FCM").toPromise();
   }
+  async getfcMember(name, server) {
+    return await this.http.get<any>(this.baseUrl + 'name=' + name + '&server=' + server).toPromise();
+  }
+  async getGear(id) {
+    return await this.http.get<any>('https://xivapi.com/character/' + id + '?extended=1').toPromise();
+  }
 }

@@ -1,0 +1,39 @@
+ 1. Node js is a platform that lets you code in one language and compiles it into many different languages for multiple platforms
+
+ 2. Npm is a package manager that lets you download libraries quickly and easily
+
+ 3. in the node folder somewhere in the appdata/roaming/npm
+
+ 4. Its a form of bootstrap used for mobile apps. Premade components with custom styling designed for mobile devices
+
+ 5. Componenets are HTML templates that contain code that defines what they do and also have a css selector for styling and other needs
+
+ 6. A module is A larger segment of a webiste containing multiple componenets that is itself contained within a HTML tag that you place within the app html of your app
+
+ 7. A service is a segment of typescript that is used to define the means through which information will be fetched and used.
+
+ 8. ng server -o  the '-o' us optional, it simply opens the app in a web package
+
+ 9. Routes are defined with the active state property and the target route property
+
+10. Http client requires the import of the HttpClientModule
+
+11. React uses "state" to store data
+
+12. v-on:"Event" is used to define an event listener
+
+13. Asynchronous Javascript and XML       "cheers google"
+
+14. Simply Fetch.
+
+15. Progressive web app
+
+16. An api is a database online that stores information that can be fetch to be used however in your own code
+
+17. RandomUser.me and chucknorris.io 
+
+18. Cdn or Content delivery network is a link that lets us accese a library without downloading it entirely. only work if connected to the internet
+
+19. All apps use electrons as the movement of electrons is how we have electricity and therefore any technologie
+
+20. Sonny
