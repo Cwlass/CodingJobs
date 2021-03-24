@@ -96,4 +96,107 @@ select * from employee WHERE id BETWEEN 100 AND 130;*/
 
 -- SELECT COUNT(*) AS 'Number of employees' FROM employee;
 
-SELECT SUM(salary) AS 'total Salary' FROM employee
+-- SELECT SUM(salary) AS 'total Salary' FROM employee;
+-- SELECT SUM(salary)AS 'Marketing Salary' FROM employee WHERE department = 'Marketing';
+-- SELECT AVG(salary)AS 'Marketing Salary' FROM employee WHERE department = 'Marketing';
+-- Select salary from employee WHERE department = 'Marketing';
+
+-- SELECT * FROM employee WHERE salary > ( SELECT AVG(salary) FROM employee WHERE department = 'marketing');
+
+-- SELECT department, count(*) AS 'department_count' FROM Employee GROUP BY department
+
+-- SELECT gender , count(*) as count from Employee group by gender;
+/*DELIMITER $
+CREATE FUNCTION net_salary(sal INT) RETURNS INT
+
+BEGIN
+	RETURN (sal*0.80);
+END$
+DELIMITER ;
+SELECT first_name,salary, net_salary(salary) as 'salary after tax' FROM employee;*/
+
+
+/*DELIMITER $
+CREATE FUNCTION fullname(firstName TEXT , name TEXT) returns TEXT
+BEGIN
+	RETURN (CONCAT(firstName,' ', name));
+END$
+DELIMITER ;*/
+-- SELECT fullname(first_name, name) as 'full name' from employee;
+
+/*CREATE TABLE building (
+	id INT(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(20) NOT NULL,
+    adresse TEXT NOT NULL,
+    description TEXT NOT NULL,
+    PRIMARY KEY(id)
+) ENGINE=innoDB;*/
+
+-- SELECT * FROM building;
+
+-- ALTER TABLE employee 
+-- 	ADD building_id int(11),
+    
+--     ADD CONSTRAINT fk_employee_building
+-- 	FOREIGN KEY (building_id) REFERENCES building(id);
+
+-- UPDATE employee SET building_id = ROUND(RAND()*4)+1;
+-- select * from employee, building WHERE building_id = building.id ORDER BY building.id
+-- SELECT * FROM employee JOIN building on building_id = building.id
+
+-- SELECT e.first_name, b.name FROM employee AS e INNER JOIN building AS b ON e.building_id = b.id WHERE b.id=1
+
+-- UPDATE employee SET building_id = NULL WHERE ID IN(22,35,120,250,320);
+
+/*SELECT * FROM employee
+INNER JOIN building
+ON building_id = building.id
+ORDER BY employee.id*/
+-- SELECT * FROM employee
+-- LEFT JOIN building
+-- ON building_id = building.id
+-- ORDER BY employee.id
+
+-- INSERT INTO building (name, adresse, description)VALUES
+-- ('batman', 'Gotham City', 'Not the hero this city needs, but the hero it deserves');
+
+/*SELECT * FROM employee
+RIGHT JOIN building
+ON building_id = building.id
+ORDER BY employee.id*/
+
+/*PREPARE select_men FROM "SELECT * FROM employee WHERE gender = 'm'";
+
+EXECUTE select_men;
+
+PREPARE select_department FROM "SELECT * FROM employee WJERE department = ?";
+
+SET @department = "Marketing";
+
+EXECUTE select_department USING @department;*/
+
+
+/*CREATE VIEW women_employee AS SELECT * FROM employee WHERE gender = 'f';
+SELECT * FROM women_employee;*/
+
+/*CREATE VIEW poor_employee AS
+	SELECT * FROM employee
+    WHERE salary <(
+		SELECT ROUND(AVG(salary),2) FROM employee
+	);*/
+    
+/*SELECT * FROM poor_employee
+UNION
+SELECT * FROM women_employee*/
+CREATE TABLE subscriber (
+	id INT(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(20) NOT NULL,
+    PRIMARY KEY(id)
+) ENGINE=innoDB;
+
+CREATE TABLE book(
+	id int(11) NOT NULL AUTO_INCREMENT,
+    title VARCHAR(20),
+    author TEXT,
+    PRIMARY KEY(id)
+    )ENGINE = INNODB;
