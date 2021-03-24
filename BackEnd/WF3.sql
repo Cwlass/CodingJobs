@@ -62,5 +62,38 @@ USE wf3_entreprise;
 
 -- SELECT * FROM employee WHERE department IN('Support') ORDER BY salary DESC LIMIT 1;
 
-SELECT * FROM employee
-WHERE salary =  (Select salary FROM employee WHERE department in('Support') ORDER BY salary DESC LIMIT 1)
+-- SELECT * FROM employee
+-- WHERE salary =  (Select salary FROM employee WHERE department in('Support') ORDER BY salary DESC LIMIT 1)
+
+/*SELECT * ,
+	CASE
+		WHEN hire_date <= "2011-03-23" THEN "Senior"
+        ELSE "Junior"
+	END AS "senjority"
+FROM employee;*/
+
+-- SELECT * FROM employee WHERE salary BETWEEN 1500 AND 2500;
+
+/*SELECT *,
+	CASE
+		WHEN salary  <= 20000 THEN "low"
+        WHEN salary BETWEEN 20000 AND 30000 THEN "medium"
+        WHEN salary >= 30000 THEN "high"
+	END AS "salary_level"
+FROM employee;*/
+
+-- UPDATE employee SET salary = 18000 WHERE id = 27;
+-- SELECT * FROM employee WHERE id = 27;
+
+-- UPDATE employee SET salary = salary -100 WHERE gender = 'm';
+-- select * from employee where gender = 'm';
+
+-- UPDATE employee SET hire_date = "2017-05-20" WHERE id IN ( 5, 21, 32, 64, 128);
+
+-- select * from employee WHERE id IN ( 5, 21, 32, 64, 128);
+/*DELETE from employee WHERE id=120;
+select * from employee WHERE id BETWEEN 100 AND 130;*/
+
+-- SELECT COUNT(*) AS 'Number of employees' FROM employee;
+
+SELECT SUM(salary) AS 'total Salary' FROM employee

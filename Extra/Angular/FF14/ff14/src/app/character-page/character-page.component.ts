@@ -33,6 +33,7 @@ export class CharacterPageComponent implements OnInit {
   async getFc() {
     const fcDate = await this.ff14S.getCharFC(this.charID);
     this.fcMembers = fcDate.FreeCompanyMembers;
+    document.querySelector("#fcMembers").classList.add(".fade-in");
   }
   async getGear() {
     const gear = await this.ff14S.getGear(this.charID);
@@ -62,12 +63,13 @@ export class CharacterPageComponent implements OnInit {
     this.charID = char.Results[0].ID;
 
     const charSheet = await this.ff14S.findCharById(this.charID);
+
     this.charName = charSheet.Character.Name;
     this.nameDay = charSheet.Character.NameDay;
-    console.log(this.nameDay);
-
     this.fc = charSheet.Character.FreeCompanyName;
     this.portrait = charSheet.Character.Portrait;
+    document.querySelector("#charSheet article").classList.add(".slide-in-blurred-top");
+    document.querySelector("#charSheet article").classList.remove(".hidden");
     this.getFc();
     this.getGear();
   }

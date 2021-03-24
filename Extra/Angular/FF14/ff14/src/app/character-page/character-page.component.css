@@ -29,36 +29,97 @@ margin: 50px;
 #charSheet Article{
 margin: 30px;
 }
-  #searchBar{
-    background-color: #1b1b1b;
-    color: white;
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-between;
-  }
-  #searchBar img{
-    width: 128px;
-  }
-  #searchBar input{
-    margin: 15px 15px;
-  }
-  #searchBar select,
-  label,
-  button{
-    margin: 15px 15px;
-    width: 150px;
-  }
-  #searchBar button{
-    background-color: #d6d4cf;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    padding: 5px;
-  }
-  li:hover {
-    cursor: pointer;
-    background-color: #1b1b1b;
-    color : white;
+#searchBar{
+  background-color: #1b1b1b;
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+#searchBar img{
+  width: 128px;
+}
+#searchBar input{
+  margin: 15px 15px;
+}
+#searchBar select,label,button{
+  margin: 15px 15px;
+  width: 150px;
+}
+#searchBar button {
+  padding: 15px 25px;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #999;
+}
 
+#searchBar button:hover {background-color: #acacac}
+
+#searchBar button:active {
+  background-color: #acacac;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+li:hover {
+  cursor: pointer;
+  background-color: #1b1b1b;
+  color : white;
+
+}
+.hidden{
+  display: none;
+}
+
+
+
+  .slide-in-blurred-top {
+    -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
   }
+
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
