@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body{
+    font-family: 'Anton', 'sans-serif';
+    /*background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hollywood_Sign_%28Zuschnitt%29.jpg/1200px-Hollywood_Sign_%28Zuschnitt%29.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+    width : 200px;
+    height: 300px;
+    margin: 0 20px;
+}
+input[type = image]{
+    width : 200px;
+    height: 300px;
+    margin: 0 20px;
+}
+input[type = text]{
+    display: none;
+}
+.imgCont{
+    display: flex;
+
+
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.moviePoster{
+    text-align: center;
+    color: black;
+}
+h1{
+    text-align: center;
+}
+
+section{
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 30px 10%;
+    border-radius: 50px;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+a{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 15px;
+
+}
+.movieDetails{
+    display: flex;
+}
+.directorL{
+    text-align: center;
+}

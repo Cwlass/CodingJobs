@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Yeseva One', cursive;
+}
+.section1{
+    background-image: url(../images/Bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 150px;
+    height: 100%
+}
+
+.section1 article img{
+    margin-bottom: 50px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin:  0px 250px
+}
+
+nav div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+    align-items: center;
+}
+nav div a{
+    margin: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+i.fab{
+    color: #dab33e;
+    font-size: 2rem;
+    margin: 10px;
+}
+h1{
+    font-size: 100px;
+    width: 1200px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.section1 article{
+    text-align: center;
+    color: white;
+}
+.section1 article img{
+    margin: auto;
+    margin-bottom: 30px;
+    display: block;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.container a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+#whiteBg{
+    background-color: rgba(255, 255, 255, 0.3);
+    border: solid white 1px;
+    padding: 20px 50px;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin: 50px 20px;
+}
+#blackBg{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: solid black 1px;
+    padding: 20px 50px;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin: 50px 20px;
+    width: 1000px;
+}
+.section2{
+    background-image: url(../images/SectionBackground.png);
+}
+form{
+    background-color: rgba(255, 255, 255, 0.3);
+    border: solid white 1px;
+    padding: 20px 50px;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin: 50px 20px;
+    width: 400px;
+}
