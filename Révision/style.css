@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 30px;
+    padding: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+h1{
+    margin: 30px;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+.homeInfo{
+    font-size: 3em;
+}
+.homeSection{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+}
+.homeSection img{
+    width: 50vw;
+}
+.homeSection p{
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    color: black;
+}
