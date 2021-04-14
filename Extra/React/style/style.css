@@ -25,6 +25,9 @@ main #search{
 img{
     width: 50%;
 }
+.charImg{
+  display: none;
+}
 .loader {
     margin: auto;
     border: 16px solid #f3f3f3;
@@ -61,8 +64,9 @@ img{
     font-size: 1.2em;
     padding: 5px;
   }
-  #container li:hover {
+  #container li{
     cursor: pointer;
+    width: 150px;
   }
 
   @keyframes spin {
@@ -73,3 +77,22 @@ img{
       transform: rotate(360deg);
     }
   }
+#search button{
+    cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#search button:hover {background-color: #acacac}
+
+#search button:active {
+  background-color: #acacac;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+li:hover {
+  cursor: pointer;
+  background-color: #1b1b1b;
+  color : white;}
